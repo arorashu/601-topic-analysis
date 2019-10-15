@@ -1,36 +1,59 @@
 \documentclass{article}
+\usepackage{hyperref}
 \begin{document}
-	Deep Learning for Computer Vision - A crash course
+	\begin{titlepage}
+		\vspace*{\stretch{1.0}}
+		\begin{center}
+			\Large\textbf{Deep Learning for Computer Vision - A crash course}\\
+			\large\textit{Shubham Arora}
+		\end{center}
+		\vspace*{\stretch{2.0}}
+	\end{titlepage}
 	
-	\section{Standard defined tasks}
+	
+	\section{Standard tasks in Computer Vision}
 	\begin{itemize}
-		\item Image classification
-		\item Image captioning
-		\item Object localization
-		\item Segmentation
-		\item Object Detection
-		
+		\item Recognition
+		\begin{itemize}
+			\item Image classification
+			\item Image captioning
+			\item Object localization
+			\item Segmentation
+			\item Object Detection
+		\end{itemize}
+		\item Motion Analysis
+		\begin{itemize}
+			\item Tracking
+			\item Optical flow
+		\end{itemize}
+		\item Other
+		\begin{itemize}
+			\item Image recolorization
+			\item Super-Resolution
+		\end{itemize}
+	
 	\end{itemize}
-	\section{Important Ideas}
-	\subsection{Backpropagation}
+	\section{Important Ideas of Deep Learning-Vision. A historical perpective}
 	
 	\subsection{Convolutional Neural Networks (CNN)}
-		\paragraph{Yann LeCun}
-			1998 - LeNet-5 was one of the first NN that utilized backpropagation using Supervised Learning
+		\paragraph{LeNet}
+			1998 - LeNet-5 was one of the first NN that utilized backpropagation using Supervised Learning. CNN's are by far the most used Neural layer architecture in any machine vision tasks. Yann LeCun was a co-recipent of the 2018 Turing Award for his work in Ai \& vision, owning a lot to the success of CNN in practical applications.
 			
 		\paragraph{How does it work}
 		\begin{itemize}
-			\item Func from raw pixel -> n numbres (classs cores) 
-			\item dot products and max operations 
+			\item ConvNet architecture is particularly optimized for images - vastly reduces the number of parameters neede to train the network.
+			\item essentially a combination of matrix dot products and $max()$ operations 
+			\item Function from raw pixels $->$ n numbers (classs scores in the case of image classification) 
+			
 		\end{itemize}
 			
 	\subsection{Deep Convolutional Neural Networks (CNN)}
 		\paragraph{AlexNet}
-		2012 - Image classifier on the ImageNet database. Built upon 1998 CNN work, scaled it up and run on GPU's
+		2012 - Image classifier on the ImageNet database. It Built upon the 1998 work on CNN, it was scaled massively due to availability of exponentially more data and parallel compute using GPU's
 		\paragraph{Major Improvements}
 		\begin{itemize}
 			\item Reduced code complexity as it utilized homogeneous architectures
-			\item no need to do complex step of feature extraction
+			\item No need to do complex step of feature extraction
 			\item Made it easier to do Transfer Learning
 		\end{itemize}
 		\paragraph{Industry applications}
@@ -38,17 +61,18 @@
 			\item Face Recognition
 			\item Self driving cars
 			\item Image captioning?
-			\item building block in Reinforcement Learning computations
+			\item Building block in Reinforcement Learning
 		\end{itemize} 
 	
 	\subsection{Residual Networks (ResNet)}
 		\paragraph{ResNet}
-		2015 - Microsoft Research - Much better performance
+		2015 - Microsoft Research - Much better performance than plain deep neural networks. Utilized the idea of skip connections across non sequential layers. Won the ImageNet challenge in 2015.
 
 	\section{Why vision is important?}
 	\begin{itemize}
-		\item A lot of major breakthroughs in ML have been realized in this field
-		\item Visual perception is a very important ability for robotics
+		\item Vision and NLP have been the core of Machine Learning innovation
+		\item Vision is a very important ability in robotics for perception, localization, mapping and motion planning tasks.
+		\item Automate critical tasks that rely on human vision - fault detection, autonomous vehicles
 	\end{itemize}
 
 	\section{Important Tools}
@@ -60,6 +84,8 @@
 	
 	\section{Refrences}
 		\begin{itemize}
-			\item Andrej Karpathy -  "https://www.youtube.com/watch?v=u6aEYuemt0M\&t=524s"
+			\item \href{https://www.youtube.com/watch?v=u6aEYuemt0M\&t=524s}{Andrej Karpathy}
+			\item \href{https://en.wikipedia.org/wiki/Computer_vision}{Wikipedia}
+			\item \href{https://cs231n.github.io/}{Stanford - cs231n}
 		\end{itemize}
 \end{document}
