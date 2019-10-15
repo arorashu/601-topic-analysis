@@ -1,20 +1,49 @@
 \documentclass{article}
 \begin{document}
-	Computer Vision \& Machine Learning - A crash course
+	Deep Learning for Computer Vision - A crash course
 	
 	\section{Standard defined tasks}
 	\begin{itemize}
-		\item Image Classification
+		\item Image classification
+		\item Image captioning
+		\item Object localization
+		\item Segmentation
+		\item Object Detection
 		
 	\end{itemize}
 	\section{Important Ideas}
+	\subsection{Backpropagation}
+	
 	\subsection{Convolutional Neural Networks (CNN)}
 		\paragraph{Yann LeCun}
 			1998 - LeNet-5 was one of the first NN that utilized backpropagation using Supervised Learning
 			
+		\paragraph{How does it work}
+		\begin{itemize}
+			\item Func from raw pixel -> n numbres (classs cores) 
+			\item dot products and max operations 
+		\end{itemize}
+			
 	\subsection{Deep Convolutional Neural Networks (CNN)}
 		\paragraph{AlexNet}
-		2012 - Image classifier on the ImageNet database. Built upon 1998 CNN work, scaled it up and run on GPU's 
+		2012 - Image classifier on the ImageNet database. Built upon 1998 CNN work, scaled it up and run on GPU's
+		\paragraph{Major Improvements}
+		\begin{itemize}
+			\item Reduced code complexity as it utilized homogeneous architectures
+			\item no need to do complex step of feature extraction
+			\item Made it easier to do Transfer Learning
+		\end{itemize}
+		\paragraph{Industry applications}
+		\begin{itemize}
+			\item Face Recognition
+			\item Self driving cars
+			\item Image captioning?
+			\item building block in Reinforcement Learning computations
+		\end{itemize} 
+	
+	\subsection{Residual Networks (ResNet)}
+		\paragraph{ResNet}
+		2015 - Microsoft Research - Much better performance
 
 	\section{Why vision is important?}
 	\begin{itemize}
@@ -25,6 +54,12 @@
 	\section{Important Tools}
 	\begin{itemize}
 		\item OpenCV
+		\item Keras
 		\item Tensorflow
 	\end{itemize}
+	
+	\section{Refrences}
+		\begin{itemize}
+			\item Andrej Karpathy -  "https://www.youtube.com/watch?v=u6aEYuemt0M\&t=524s"
+		\end{itemize}
 \end{document}
