@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
 \begin{document}
 	\begin{titlepage}
 		\vspace*{\stretch{1.0}}
@@ -9,7 +11,9 @@
 		\end{center}
 		\vspace*{\stretch{2.0}}
 	\end{titlepage}
-	
+
+	\tableofcontents
+	\newpage
 	
 	\section{Standard tasks in Computer Vision}
 	\begin{itemize}
@@ -74,6 +78,24 @@
 		\item Vision is a very important ability in robotics for perception, localization, mapping and motion planning tasks.
 		\item Automate critical tasks that rely on human vision - fault detection, autonomous vehicles
 	\end{itemize}
+
+	
+	\section{Important Applications}
+		\subsection{Object Detection}
+		It is the task of assiging a label to an image from a fixed set of categories.
+		\begin{figure}[H]
+			\includegraphics[width=10cm]{classify-cat}
+			\caption{Example of classifying a cat image}
+			\label{fig:classify-cat}
+		\end{figure}
+		As shown in Figure:\ref{fig:classify-cat}, thse system outputs various probabilities for different possible categories.
+		
+		\subsection{Human Activity Recognition}
+		The task of identifying specific movement or action using data from visual sensors. These activities are like: walking, jumping, talking, standing, etc. The task can be online or offline depending upon the real time nature of the application. With the dawn of cheap consumer electronics like smartphones and cameras, lots of data is available now, which made Deep Learning viable and very effective.
+
+
+%\section{Areas of active research}
+%\paragraph{Transfer Learning}	
 
 	\section{Important Tools}
 	\begin{itemize}
