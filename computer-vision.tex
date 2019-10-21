@@ -15,6 +15,19 @@
 	\tableofcontents
 	\newpage
 	
+	\section{Introduction}
+		\paragraph{Computer Vision}
+		A subfield of Artificial Intelligence and Machine Learning that deals with tasks that require high level understanding of images and videos. The expected benchmark in any such task is to reach human level accuracy. Human level accuracy is anywhere between 2-5\% ()depending on task)
+		\paragraph{Deep Learning}
+		Artificial Neural Networks that are characterized by having multiple layers.The goal of a neural networks is to approximate some function f().
+		Intuitively, we want the Neural Networks to learn increasing level of abstraction in successive layers.
+		\begin{figure}[H]
+			\includegraphics[width=10cm]{NN-dlbook.jpeg}
+			\caption{Example of a NN performing image classification}
+			\label{fig:NN-dlbook.jpeg}
+		\end{figure}
+		
+	
 	\section{Standard tasks in Computer Vision}
 	\begin{itemize}
 		\item Recognition
@@ -84,7 +97,7 @@
 		\subsection{Object Detection}
 		It is the task of assiging a label to an image from a fixed set of categories.
 		\begin{figure}[H]
-			\includegraphics[width=10cm]{classify-cat}
+			\includegraphics[width=10cm]{classify-cat.png}
 			\caption{Example of classifying a cat image}
 			\label{fig:classify-cat}
 		\end{figure}
@@ -104,21 +117,23 @@
 		\item Tensorflow
 	\end{itemize}
 	
-	\section{Refrences}
-		\begin{itemize}
-			\item \href{https://www.youtube.com/watch?v=u6aEYuemt0M\&t=524s}{Andrej Karpathy}
-			\item \href{https://en.wikipedia.org/wiki/Computer_vision}{Wikipedia}
-			\item \href{https://cs231n.github.io/}{Stanford - cs231n}
-		\end{itemize}
-	
 	
 	\section{Peer Review}
 		\subsection{Thuy Pham}
 			\paragraph{Topics covered}
+			Thuy analyses Unsupervised learning approaches in practice and the field of machine ethics. She discusses:
+			\begin{itemize}
+				\item Unsupervised learning can improve performance when used alongwith the traditional supervised learning approaches.
+				\item Fraud detection in credit card and auto insurance industries
+				\item The emerging field of Machine Ethics.She outlines the philosophy, need and challenges in codifying ethics in AI systems.
+			\end{itemize}  
+			\paragraph{Learnings}
+			I learned about how clustering and supervised learning are used together in detecting credit card anomaly,
+			the method of Spectral Ranking Anomaly for auto insurance fraud detection and challenges in coding ethics into machines.
 
 		\subsection{Bowen Qin}
 			\paragraph{Topics covered}
-			Bowen does a deep analysis of the TensorFlow platform for use in creating Machine Learning models using Neural Networks. He discusses the following:
+			Bowen does a deep analysis of the TensorFlow platform for use in creating Machine Learning models using Neural Networks. She discusses the following:
 			\begin{itemize}
 				\item How Tensorflow has tooling and support for multiple programming languages, neural network arcchitectures and deployment environments
 				\item An analysis of common tasks performed using TF - Image classification and segmentation using CNN's
@@ -129,7 +144,7 @@
 			
 		\subsection{Mengting Song}
 			\paragraph{Topics covered}
-			Mengting elaborates on the various tasks in Object detection, classification and segmentation. He discusses the following:
+			Mengting elaborates on the various tasks in Object detection, classification and segmentation. She discusses the following:
 			\begin{itemize}
 				\item Different approaches in detection, namely CNN's, YOLO and SSD
 				\item The different outputs that we expect in the 3 cases of detection, classification and segmentation.
@@ -140,7 +155,17 @@
 			
 		\subsection{Ningrong Chen}
 			\paragraph{Topics covered}
-			Ningrong gives an overview of Object detection 
+			Ningrong gives an overview of Object detection and an extensive list of algorithms and neural network architectures alongwith an Introduction to the concept of Model zoo with a lot of resources of pre built zoo models.
+			\paragraph{Learnings}
+			I learned about Model Zoo - a collection of pre-trained models on different datasets using various algorithms. I also learned about the numerous number of architectures that can be utilized in object detection.
+			
+	\section{References}
+		\begin{itemize}
+			\item \href{https://www.youtube.com/watch?v=u6aEYuemt0M\&t=524s}{Andrej Karpathy}
+			\item \href{https://en.wikipedia.org/wiki/Computer_vision}{Wikipedia}
+			\item \href{https://cs231n.github.io/}{Stanford - cs231n}
+			\item \href{http://www.deeplearningbook.org}{Deep Learning Book}
+		\end{itemize}
 		
 	
 			
